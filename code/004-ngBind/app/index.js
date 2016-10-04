@@ -8,4 +8,4 @@ var firstController = function($scope){
 
     $scope.age = 20;
 
-}
+};
