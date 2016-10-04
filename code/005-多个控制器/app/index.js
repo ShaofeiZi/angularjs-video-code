@@ -1,6 +1,4 @@
-
-
-var firstController = function($scope){
+var firstController = function ($scope) {
 
 
     $scope.name = '张三';
@@ -8,7 +6,7 @@ var firstController = function($scope){
 
 };
 
-var secondController = function($scope){
+var secondController = function ($scope) {
 
     console.log($scope);
 };
