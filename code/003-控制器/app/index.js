@@ -1,6 +1,4 @@
-
-
-var firstController = function($scope){
+var firstController = function ($scope) {
 
     // $scope 我们叫做作用域
     // 申明一个Model
@@ -8,4 +6,4 @@ var firstController = function($scope){
 
     $scope.age = 20;
 
-}
+};
