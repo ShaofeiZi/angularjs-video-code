@@ -1,6 +1,4 @@
-
-
-var firstController = function($scope){
+var firstController = function ($scope) {
 
     $scope.date = new Date();
 
@@ -10,13 +8,13 @@ var firstController = function($scope){
 //
 //    },1000)
 
-    setInterval(function(){
-        $scope.$apply(function(){
+    setInterval(function () {
+        $scope.$apply(function () {
             $scope.date = new Date();
             //....会去触发脏检查
         })
-    },1000)
+    }, 1000);
 
 
     // 触发一次脏检查
-}
+};

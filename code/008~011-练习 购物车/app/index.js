@@ -35,10 +35,10 @@ var cartController = function ($scope) {
     $scope.totalPrice = function () {
         var total = 0;
         angular.forEach($scope.cart, function (item) {
-            total += item.quantity * item.price;
-        })
+            total = (item.quantity * item.price)+total;
+        });
         return total;
-    }
+    };
 
     /**
      * 计算总购买数
@@ -46,10 +46,10 @@ var cartController = function ($scope) {
     $scope.totalQuantity = function () {
         var total = 0;
         angular.forEach($scope.cart, function (item) {
-            total += parseInt(item.quantity);
-        })
+            total = parseInt(item.quantity)+total;
+        });
         return total;
-    }
+    };
 
 
     /**
